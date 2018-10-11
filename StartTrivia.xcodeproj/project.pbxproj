@@ -12,6 +12,11 @@
 		1C47C534216F99340015583B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C47C532216F99340015583B /* Main.storyboard */; };
 		1C47C536216F99360015583B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C47C535216F99360015583B /* Assets.xcassets */; };
 		1C47C539216F99360015583B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C47C537216F99360015583B /* LaunchScreen.storyboard */; };
+		1C47C543216F9E270015583B /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C47C540216F9E260015583B /* Starjhol.ttf */; };
+		1C47C544216F9E270015583B /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C47C541216F9E260015583B /* Starjout.ttf */; };
+		1C47C545216F9E270015583B /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C47C542216F9E270015583B /* Starjedi.ttf */; };
+		1C47C54C216FAA5E0015583B /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47C54B216FAA5E0015583B /* BlackBgView.swift */; };
+		1C47C54F216FAAFF0015583B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47C54E216FAAFF0015583B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		1C47C535216F99360015583B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C47C538216F99360015583B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C47C53A216F99360015583B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C47C540216F9E260015583B /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		1C47C541216F9E260015583B /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		1C47C542216F9E270015583B /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		1C47C54B216FAA5E0015583B /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
+		1C47C54E216FAAFF0015583B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,68 @@
 		1C47C52D216F99340015583B /* StartTrivia */ = {
 			isa = PBXGroup;
 			children = (
-				1C47C52E216F99340015583B /* AppDelegate.swift */,
-				1C47C530216F99340015583B /* SelectPersonVC.swift */,
-				1C47C532216F99340015583B /* Main.storyboard */,
-				1C47C535216F99360015583B /* Assets.xcassets */,
-				1C47C537216F99360015583B /* LaunchScreen.storyboard */,
+				1C47C54A216F9EE80015583B /* Controller */,
+				1C47C549216F9EE20015583B /* View */,
+				1C47C548216F9ED70015583B /* Model */,
+				1C47C54D216FAAE60015583B /* Utils */,
+				1C47C547216F9E4C0015583B /* Resources */,
 				1C47C53A216F99360015583B /* Info.plist */,
 			);
 			path = StartTrivia;
+			sourceTree = "<group>";
+		};
+		1C47C546216F9E340015583B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1C47C542216F9E270015583B /* Starjedi.ttf */,
+				1C47C540216F9E260015583B /* Starjhol.ttf */,
+				1C47C541216F9E260015583B /* Starjout.ttf */,
+			);
+			name = Fonts;
+			path = ../Fonts;
+			sourceTree = "<group>";
+		};
+		1C47C547216F9E4C0015583B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C47C535216F99360015583B /* Assets.xcassets */,
+				1C47C546216F9E340015583B /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C47C548216F9ED70015583B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C47C549216F9EE20015583B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C47C532216F99340015583B /* Main.storyboard */,
+				1C47C537216F99360015583B /* LaunchScreen.storyboard */,
+				1C47C54B216FAA5E0015583B /* BlackBgView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C47C54A216F9EE80015583B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C47C52E216F99340015583B /* AppDelegate.swift */,
+				1C47C530216F99340015583B /* SelectPersonVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1C47C54D216FAAE60015583B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1C47C54E216FAAFF0015583B /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +189,9 @@
 				1C47C539216F99360015583B /* LaunchScreen.storyboard in Resources */,
 				1C47C536216F99360015583B /* Assets.xcassets in Resources */,
 				1C47C534216F99340015583B /* Main.storyboard in Resources */,
+				1C47C544216F9E270015583B /* Starjout.ttf in Resources */,
+				1C47C545216F9E270015583B /* Starjedi.ttf in Resources */,
+				1C47C543216F9E270015583B /* Starjhol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +204,8 @@
 			files = (
 				1C47C531216F99340015583B /* SelectPersonVC.swift in Sources */,
 				1C47C52F216F99340015583B /* AppDelegate.swift in Sources */,
+				1C47C54C216FAA5E0015583B /* BlackBgView.swift in Sources */,
+				1C47C54F216FAAFF0015583B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
