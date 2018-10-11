@@ -173,6 +173,17 @@
                                     <constraint firstItem="brs-KT-OWD" firstAttribute="top" secondItem="eAS-uK-6Pr" secondAttribute="top" constant="20" id="qt4-Vh-u2c"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5L2-Yc-Hlt">
+                                <rect key="frame" x="82.666666666666686" y="718" width="210" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59819135270000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="hTM-og-NTd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <state key="normal" title="&amp; Random *">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -181,11 +192,13 @@
                             <constraint firstItem="eAS-uK-6Pr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bnz-HX-C9d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eAS-uK-6Pr" secondAttribute="trailing" constant="20" id="LKx-mp-so5"/>
                             <constraint firstItem="feA-ki-m7T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QL8-9A-HjN"/>
+                            <constraint firstItem="5L2-Yc-Hlt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cUM-bi-9v2"/>
                             <constraint firstItem="eAS-uK-6Pr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eZy-BW-VbF"/>
                             <constraint firstItem="0XE-qM-AwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gTL-Rc-jNF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="feA-ki-m7T" secondAttribute="trailing" constant="20" id="k9P-LC-YgS"/>
                             <constraint firstItem="0XE-qM-AwL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oIk-rF-Vt6"/>
                             <constraint firstItem="feA-ki-m7T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rgh-As-1hE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5L2-Yc-Hlt" secondAttribute="bottom" constant="20" id="ygF-2t-VOR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
