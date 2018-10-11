@@ -6,4 +6,18 @@
 //  Copyright © 2018 MorilloApps. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class BlackBgView: UIView {
+  override func awakeFromNib() {
+    layer.backgroundColor = BLACK_BG
+    layer.cornerRadius = 10
+    }
+}
+
+class BlackBgButton: UIButton {
+  override func awakeFromNib() {
+    layer.backgroundColor = BLACK_BG
+    layer.cornerRadius = 10
+  }
+}

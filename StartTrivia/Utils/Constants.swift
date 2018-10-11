@@ -6,4 +6,6 @@
 //  Copyright © 2018 MorilloApps. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+let BLACK_BG = UIColor.black.withAlphaComponent(0.6).cgColor

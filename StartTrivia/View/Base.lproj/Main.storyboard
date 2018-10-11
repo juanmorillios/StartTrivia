@@ -34,7 +34,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAS-uK-6Pr">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAS-uK-6Pr" customClass="BlackBgView" customModule="StartTrivia" customModuleProvider="target">
                                 <rect key="frame" x="20" y="279" width="335" height="254"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="brs-KT-OWD">
@@ -173,7 +173,7 @@
                                     <constraint firstItem="brs-KT-OWD" firstAttribute="top" secondItem="eAS-uK-6Pr" secondAttribute="top" constant="20" id="qt4-Vh-u2c"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5L2-Yc-Hlt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5L2-Yc-Hlt" customClass="BlackBgButton" customModule="StartTrivia" customModuleProvider="target">
                                 <rect key="frame" x="82.666666666666686" y="718" width="210" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59819135270000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -203,9 +203,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="UB3-hg-6n7"/>
-                    <connections>
-                        <outlet property="stackBg" destination="eAS-uK-6Pr" id="0u5-Fe-DO9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
