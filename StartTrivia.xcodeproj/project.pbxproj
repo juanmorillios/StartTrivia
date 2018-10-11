@@ -60,12 +60,10 @@
 		1C47C52D216F99340015583B /* StartTrivia */ = {
 			isa = PBXGroup;
 			children = (
-				1C47C52E216F99340015583B /* AppDelegate.swift */,
+				1C47C54A216F9EE80015583B /* Controller */,
+				1C47C549216F9EE20015583B /* View */,
+				1C47C548216F9ED70015583B /* Model */,
 				1C47C547216F9E4C0015583B /* Resources */,
-				1C47C530216F99340015583B /* SelectPersonVC.swift */,
-				1C47C532216F99340015583B /* Main.storyboard */,
-				1C47C535216F99360015583B /* Assets.xcassets */,
-				1C47C537216F99360015583B /* LaunchScreen.storyboard */,
 				1C47C53A216F99360015583B /* Info.plist */,
 			);
 			path = StartTrivia;
@@ -85,9 +83,35 @@
 		1C47C547216F9E4C0015583B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1C47C535216F99360015583B /* Assets.xcassets */,
 				1C47C546216F9E340015583B /* Fonts */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C47C548216F9ED70015583B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C47C549216F9EE20015583B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C47C532216F99340015583B /* Main.storyboard */,
+				1C47C537216F99360015583B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C47C54A216F9EE80015583B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C47C52E216F99340015583B /* AppDelegate.swift */,
+				1C47C530216F99340015583B /* SelectPersonVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
