@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Starjout.ttf">
+            <string>StarJediOutline</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Select PersonVC-->
         <scene sceneID="tne-QT-ifu">
@@ -20,13 +25,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space1" translatesAutoresizingMaskIntoConstraints="NO" id="0XE-qM-AwL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Trivia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="feA-ki-m7T">
+                                <rect key="frame" x="20" y="108" width="335" height="80"/>
+                                <fontDescription key="fontDescription" name="StarJediOutline" family="Star Jedi Outline" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="0XE-qM-AwL" secondAttribute="bottom" id="2cJ-6Z-Rb7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0XE-qM-AwL" secondAttribute="trailing" id="7Xa-dC-Kop"/>
+                            <constraint firstItem="feA-ki-m7T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QL8-9A-HjN"/>
                             <constraint firstItem="0XE-qM-AwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gTL-Rc-jNF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="feA-ki-m7T" secondAttribute="trailing" constant="20" id="k9P-LC-YgS"/>
                             <constraint firstItem="0XE-qM-AwL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oIk-rF-Vt6"/>
+                            <constraint firstItem="feA-ki-m7T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rgh-As-1hE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
